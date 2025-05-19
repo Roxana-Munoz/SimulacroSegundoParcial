@@ -140,12 +140,10 @@ public function retornarVagonSinCompletar() {
                     $vagonEncontrado = $vagon;
                 }
             }
+         }
         }
-    }
 
-    return $vagonEncontrado;
+            return $vagonEncontrado;
+        }
 }
-
-
-
-}
+?>
