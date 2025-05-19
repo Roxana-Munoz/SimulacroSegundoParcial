@@ -11,15 +11,14 @@ class Vagon{
     private $largoVagon;
     private $anchoVagon;
     private $pesoVagonVacio;
-    private $pesoTotal; // un atributo para el peso total actual del vagón
+    
     //METODO CONSTRUCTOR
     public function __construct($anioInstalacion,$largoVagon,$anchoVagon,$pesoVagonVacio){
         $this->anioInstalacion=$anioInstalacion;
         $this->largoVagon=$largoVagon;
         $this->anchoVagon=$anchoVagon;
         $this->pesoVagonVacio=$pesoVagonVacio;
-        $this->pesoTotal = $pesoVagonVacio; //el peso inicial es el del vagón vacío
-    }
+       
 
     //METODOS GETERS
     public function getAnioInstalacion(){
@@ -36,9 +35,7 @@ class Vagon{
         return $this->pesoVagonVacio;
 
     } 
-     public function getPesoTotal() {
-        return $this->pesoTotal;
-    }
+ 
     //METODOS SETERS 
     public function setAnioInstalacion($anioInstalacion){
      $this->anioInstalacion=$anioInstalacion;   
@@ -54,10 +51,7 @@ class Vagon{
         $this->pesoVagonVacio=$pesoVagonVacio;
 
      }
-      public function setPesoTotal($pesoTotal) {
-        $this->pesoTotal = $pesoTotal;
-    }
-
+     
      //METODO __TO STRING
      public function __toString()
      {
@@ -65,13 +59,13 @@ class Vagon{
                  "Largo del vagon: ". $this->getLargoVagon()."\n";
                  "Ancho del vagon: ". $this->getAnchoVagon()."\n";
                  "Peso del vagon vacio: ". $this->getPesoVagonVacio()." kg"."\n";;
-                   "Peso total actual del vagón: " . $this->getPesoTotal() . " kg"."\n";
+                   
                 return $mensaje;
      }
-public function calcularPesoVagon() {
+    public function calcularPesoVagon() {
     // En general, puede devolver solo el peso del vagón vacío
-    return $this->getPesoVagonVacio();
-}
+        return $this->getPesoVagonVacio();
+    }
 
 }
 ?>
