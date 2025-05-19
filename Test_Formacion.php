@@ -92,3 +92,5 @@ echo "Vagones finales:\n";
 echo $vagon1 . "\n";
 echo $vagonCarga . "\n";
 echo $vagon2 . "\n";
+
+?>
