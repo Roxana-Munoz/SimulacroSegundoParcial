@@ -63,7 +63,7 @@ class Vagon{
                 return $mensaje;
      }
     public function calcularPesoVagon() {
-    // devUELVO el peso del vagón vacío
+    // devuelvo el peso del vagón vacío
         return $this->getPesoVagonVacio();
     }
 
