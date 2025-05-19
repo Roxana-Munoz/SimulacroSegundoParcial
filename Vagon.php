@@ -56,8 +56,8 @@ class Vagon{
      public function __toString()
      {
         $mensaje=" Año de instalacion del vagon: ". $this->getAnioInstalacion()."\n";
-                 "Largo del vagon: ". $this->getLargoVagon()."\n";
-                 "Ancho del vagon: ". $this->getAnchoVagon()."\n";
+                 "Largo del vagon: ". $this->getLargoVagon()." mts"."\n";
+                 "Ancho del vagon: ". $this->getAnchoVagon()." mts"."\n";
                  "Peso del vagon vacio: ". $this->getPesoVagonVacio()." kg"."\n";;
                    
                 return $mensaje;
