@@ -33,7 +33,7 @@ $objLocomotora= new Locomotora(188000,140); // Peso en kg (188 toneladas * 1000)
 // 2. Crear vagones según la tabla: Vagón ,pesoVacio , PesoCarga ,cantidad_maxima_pasajeros ,cantidad_actual_pasajeros
 // $anioInstalacion,$largoVagon,$anchoVagon,$pesoVagonVacio, $cantMaximaPasajerosTransportando
 
-$vagon1 = new VagonPasajeros("","","",15000, 30, 25); // pesoVacio, cant_max_pasajeros, cant_actual_pasajeros
+$vagon1 = new VagonPasajeros("","","",15000, 25, 30); // pesoVacio, cant_max_pasajeros, cant_actual_pasajeros
 
 $vagonCarga = new VagonCarga("","","",15000, 55000,"");  // pesoVacio, pesoCargaTransportado
 
