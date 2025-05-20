@@ -60,16 +60,16 @@ class VagonCarga extends Vagon{
         $this->setPesoCargaTransportado($this->getPesoCargaTransportado() + $cantidad);
         $this->calcularPesoVagon();
         $puedeAgregar = true;
-    }
+        }
     return $puedeAgregar;
-}
+    }
     // Se redefine peso del vagon de carga (retorna peso vacío + peso carga + 20% índice)
   public function calcularPesoVagon() {
     $pesoCarga = $this->getPesoCargaTransportado();
     $indice = $pesoCarga * $this->getIndice();
     $pesoTotal = parent::getPesoVagonVacio() + $pesoCarga + $indice;
     $this->setPesoVagonVacio($pesoTotal);
-}
+  }
 }
 
 ?>
