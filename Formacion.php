@@ -55,7 +55,7 @@ class Formacion{
     public function __toString() {
     $cadena = "Formación:\n";
     $cadena .= "Locomotora:\n" . $this->getObjLocomotora() . "\n";
-    $cadena .= "Cantidad de vagones: " . count($this->getColecVagones()) . " / Máximo: " . $this->getMaximoVagones() . "\n";
+    $cadena .= "Cantidad de vagones: " . count($this->getColecVagones()) . " \n Máximo: " . $this->getMaximoVagones() . "\n";
     $cadena .= "Vagones:\n";
     foreach ($this->getColecVagones() as $index => $vagon) {
         $cadena .= "Vagón " . ($index + 1) . ":\n" . $vagon . "\n";
