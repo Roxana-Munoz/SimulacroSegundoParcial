@@ -3,24 +3,23 @@
 /*/En la clase Locomotora:
  Se registra la información de su peso y velocidad máxima. */
 
- class Locomotora{
+class Locomotora{
 
-    private $peso;
-    private $velocidadMaxima;
+   private $peso;
+   private $velocidadMaxima;
 
-    //METODO CONSTRUCTOR
-    public function __construct($peso,$velocidadMaxima)
-    {
-     $this->peso=$peso;
-     $this->velocidadMaxima=$velocidadMaxima;  
-    }
+   //METODO CONSTRUCTOR
+   public function __construct($peso,$velocidadMaxima){
+      $this->peso=$peso;
+      $this->velocidadMaxima=$velocidadMaxima;  
+      }
     //METODOS GETERS
-    public function getPeso(){
+      public function getPeso(){
       return $this->peso;
-    }
-    public function getVelocidadMaxima(){
+      }
+      public function getVelocidadMaxima(){
       return $this->velocidadMaxima;
-    }
+      }
  //METODOS SETERS
       public function setPeso($peso){
          $this->peso=$peso;
@@ -31,14 +30,11 @@
 //METODO __TO STRING
       public function __toString()
       {
-          $cadena =" Peso: ". $this->getPeso().
-                 "Velocidad Maxima: ".$this->getVelocidadMaxima();
-          return $cadena;
+         $cadena =" Peso: ". $this->getPeso()."\n".
+                  "Velocidad Maxima: ".$this->getVelocidadMaxima()."\n";
+         return $cadena;
    
    }
 
- }
+}
 ?>
-
-
-
